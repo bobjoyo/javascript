@@ -1,0 +1,27 @@
+총정리
+1. JavaScript 의 Variable는
+    - Mutable data type(read/write) : let
+    - immutable data type(only read) : const
+
+    -> 변하지 않는 값은 const로 선언하는 것이 좋음.
+
+2. 메모리의 값이 저장되는 방법
+    - Primitive type
+    값 자체가 메모리에 저장
+
+    - Object type
+    object는 너무 커서 바로 메모리에 올라갈 수 없음
+    const jm={name='jm', age ='20'}; 이라고
+    Object를 선언후 할당하게 되면
+    이  jm이 가리키고 있는 곳에는 ref 가 있다.
+    이 ref는 실제로 Object를 가리키고 있는 곳
+    이 ref를 통해서 실제로 Object가 담겨져있는
+    메모리를 가리키게 되는것
+    따라서 const로 선언하게 되면 jm이 ref를 가르키고 있는
+    포인터만 잠겨서 다른 오브젝트로 변경이 불가하지만
+    jm의 name, age는 계속 변경이 가능
+
+    따라서 Primitive type은 Value 로 값이 메모리에 저장되고
+    Object type은 object 를 가리키고있는 ref가 메모리에 저장된다.
+
+    
